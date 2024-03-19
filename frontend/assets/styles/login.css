@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #3b3737;
+}
+
+.container-page {
+    width: 100vw;
+    display: flex;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.left-side {
+    width: 40vw;
+    height: 100vh;
+    background-color: #c9d1d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'News Cycle', sans-serif;
+}
+
+.right-side {
+    width: 60%;
+    height: 100vh;
+    background-color: #9dd3df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.right-side {
+    width: 60%;
+    height: 100vh;
+    background-color: #9dd3df;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.img-fluid {
+    max-width: 100%; 
+    height: auto;
+}
+
+.form {
+    width: 50%;
+    color: #f7f7f7;
+}
+
+.form-label {
+    color: #3b3737;
+    text-align: center;
+}
+
+.button-send {
+    padding: 10px
+}
+
+.btn-primary {
+    background-color: #991818 !important;
+    border: 2px solid #991818 !important;
+
+}
+
+.btn-primary:hover {
+    background-color: #841616 !important;
+    border: 2px solid #f7f7f7 !important;
+    transition: all ease-in 0.3s;
+}
+
+.cadastro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cadastro {
+    position: relative;
+    text-decoration: none;
+    color: #3b3737;
+}
+
+#cadastro::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease-in-out;
+}
+
+#cadastro:hover::before {
+    width: 100%;
+}
+
+#cadastro:hover {
+    color: #1e1b1b;
+    transform: all 0.6s ease-in-out;
+}
+
+#cadastro:hover span {
+    color: #991818;
+    transform: all 0.6s ease-in-out;
+}
+
+.input-group-text svg {
+    transition: color 0.3s ease; /* Adicione uma transição para a propriedade color */
+    cursor: pointer;
+}

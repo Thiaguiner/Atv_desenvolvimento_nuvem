@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+:root {
+  --cinza: #c9d1d3;
+  --branco: #f7f7f7;
+  --azul: #9dd3df;
+  --preto: #3b3737;
+  --vermelho: #991818;
+}
+body{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: var(--azul);
+}
+.container{
+  width:  90%;
+  height: 80vh;
+  display: flex;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+}
+.form{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--cinza);
+}
+.title{
+margin-bottom: 3em;
+text-align: center;
+}
+
+.input-group{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.input-box{
+  margin: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+.input-box input{
+  margin: 0.5rem 0;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+
+}
+.input-box input:hover{
+  background-color: var(--azul);
+}
+.input-box label,
+.estado-livro h6{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.estado-livro h6{
+  padding-left: 1rem;
+}
+.estado-radio{
+  padding: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  gap: 40px;
+}
+.btn{
+  text-align: center;
+}
+.btn a{
+  display: inline-block;
+  width: 50%;
+  background-color: var(--vermelho);
+  padding: 0.65rem;
+  text-decoration: none;
+  color: var(--branco);
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@media (max-width:1330px) {
+  img{
+  display: none;
+  }
+  .container{
+    width: 50%;
+  }.form{
+    width: 100%;
+  }
+}
+@media (max-width:1064px) {
+  .container{
+    width: 90%;
+    height: auto;
+  }.input-group{
+    flex-direction: column;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    max-height: 10rem;
+    padding-right: 5rem;
+  }.estado-livro{
+    margin-top: 2rem;
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+}
