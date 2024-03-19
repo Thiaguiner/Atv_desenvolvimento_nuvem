@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda - Biblioteca Fácil</title>
+    <link rel="stylesheet" href="../frontend/assets/styles/venda.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-img">
+            <img src="../frontend/assets/img/chuttersnap-Zf64Osndqvc-unsplash.jpg" alt="">
+        </div>
+        <div class="form">
+            <form action="./">
+                <div class="title">
+                    <h1>Anuncie aqui seu livro</h1>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Escreva seu nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Escreva seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="namebook">Nome do livro</label>
+                        <input type="text" id="namebook" name="namebook" placeholder="Escreva o nome do livro" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="datebook">Data em que o livro foi comprado</label>
+                        <input type="date" id="datebook" name="datebook" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="user">Usuário</label>
+                        <input type="text" id="use" name="user" placeholder="Digite seu Usuário" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+
+                <div class="estado-livro">
+                    <div class="estado-titulo">
+                        <h6>O livro é usado ou novo?</h6>
+                    </div>
+                    <div class="estado-radio">
+                        <div class="estado-group">
+                            <input type="radio" id="novo" name="estado" required>
+                            <label for="novo">Novo</label>
+                        </div>
+                        <div class="estado-group">
+                            <input type="radio" id="usado" name="estado" required>
+                            <label for="usado">Usado</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <a href="#">Anunciar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
