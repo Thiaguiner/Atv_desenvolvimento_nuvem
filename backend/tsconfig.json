@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "NodeNext",            /* Allow 'import x from y' when a module doesn't have a default export. */
+    "esModuleInterop": true,                        /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                                      /* Enable all strict type-checking options. */                     /* Skip type checking .d.ts files that are included with TypeScript. */
+    "skipLibCheck": true,
+    "outDir": "dist"                                 /* Skip type checking all .d.ts files. */
+  },
+  "include": ["src/**/*"]
+}
+
