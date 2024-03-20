@@ -1,6 +1,6 @@
 (async () => {
     const myNewObject = new Parse.Object('livro');
-    myNewObject.set('nome', 'A string');
+    myNewObject.set('nome' , 'A string');
     myNewObject.set('descricao', 'A string');
     myNewObject.set('preco', 1);
     myNewObject.set('myField', 'A string');
